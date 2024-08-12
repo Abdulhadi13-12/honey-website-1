@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e2723;
+    color: #fff;
+}
+
+header {
+    background-color: #4e342e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffca28;
+}
+
+.hero {
+    background: url('honey-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 150px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hero-content .animated-jar {
+    max-width: 300px;
+    margin: 20px 0;
+    animation: floatRotate 4s ease-in-out infinite;
+}
+
+.hero-content .btn {
+    background-color: #ffca28;
+    color: #3e2723;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 90px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #f57c00;
+    border: #000;
+    border: 30px;
+}
+
+.about, .product {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #5d4037;
+    animation: slideIn 1s ease-out;
+}
+
+.about h2, .product h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@keyframes floatRotate {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
